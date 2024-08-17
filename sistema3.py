@@ -4,14 +4,14 @@ import tensorflow as tf
 from tensorflow.keras.utils import load_img, img_to_array
 import numpy as np
 import pandas as pd
-
-
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-# Cargar el modelo
-model = tf.keras.models.load_model('D:/Densenet.keras')
+import tensorflow as tf
+
+# Ruta relativa
+model = tf.keras.models.load_model(os.path.join('models', 'cnn.keras'))
 
 # Definir las categorías
 categories = ['No_DR', 'Mild', 'Moderate', 'Proliferate_DR', 'Severe']
