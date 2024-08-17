@@ -11,8 +11,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 # Ruta relativa
-model = tf.keras.models.load_model(os.path.join('models', 'cnn.keras'))
-
+model = tf.keras.models.load_model(os.path.join('.', 'cnn.keras'))
 # Definir las categorías
 categories = ['No_DR', 'Mild', 'Moderate', 'Proliferate_DR', 'Severe']
 
